@@ -28,7 +28,7 @@ class CrimeHolder(
 
 //New formatted date for each entry
 //Documentation: StackOverFlow -- How to use "android.text.format.DateFormat" with Kotlin?
-        val crimeDate = SimpleDateFormat("EE, MMM, dd, yyyy", Locale.US)
+        val crimeDate = SimpleDateFormat("EE. MMM. dd, yyyy", Locale.US)
         val NewDate : String = crimeDate.format(crime.date).toString()
         binding.crimeDate.text = NewDate
 
